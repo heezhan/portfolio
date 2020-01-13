@@ -1,6 +1,7 @@
 import React from 'react';
 import '../styles/Homepage.css';
 import Typed from 'typed.js';
+import { Link } from 'react-router-dom';
 
 class Homepage extends React.Component {
     componentDidMount() {
@@ -24,15 +25,12 @@ class Homepage extends React.Component {
                         style={{ whiteSpace: 'pre' }}
                         ref={(el) => { this.el = el; }}
                     />
-                    <button>Projects</button>
+                    <br/>
+                    <Link to="/projects">
+                        <button>Projects</button>
+                    </Link>
                 </div>
             </div>
-            
-            // <button onClick={() => this.typed.toggle()}>Toggle</button>
-            // <button onClick={() => this.typed.start()}>Start</button>
-            // <button onClick={() => this.typed.stop()}>Stop</button>
-            // <button onClick={() => this.typed.reset()}>Reset</button>
-            // <button onClick={() => this.typed.destroy()}>Destroy</button>
    
         )
     }
