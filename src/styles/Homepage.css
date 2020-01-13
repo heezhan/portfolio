@@ -1,10 +1,13 @@
-/* .homepage {
-    background-color: rgb(245, 238, 228);
+.homepage {
+    background-color: rgb(243, 180, 166);
     height: 100vh;
-} */
+    display: grid;
+    align-items: center;
+}
 
 .intro {
-    color: rgb(222, 71, 69);
+    color: rgb(97, 160, 232);
     font-family: 'PT Sans', sans-serif;
-    font-size: 200px;
+    font-size: 50px;
+    text-align: left;
 }

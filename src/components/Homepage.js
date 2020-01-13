@@ -1,21 +1,39 @@
 import React from 'react';
 import '../styles/Homepage.css';
+import Typed from 'typed.js';
 
 class Homepage extends React.Component {
-    handleScroll = (event) => {
-        let element = event.target 
-        if (element.scrollHeight - element.scrollTop === element.clientHeight) {
-            console.log('hey')
-        } 
+    componentDidMount() {
+      const options = {
+          strings: ["Hi, my name is Heejae. \nI am a full stack web developer."],
+          typeSpeed: 100,
+          startDelay: 50
+      };
+      this.typed = new Typed(this.el, options);
+    }
+  
+    componentWillUnmount() {
+      this.typed.destroy();
     }
 
     render() {
         return (
-            <div className="homepage" onScroll={this.handleScroll}>
+            <div className="homepage">
                 <div className="intro">
-                    Hi, my name is Heejae. I am a full stack web developer in D.C.
+                    <span
+                        style={{ whiteSpace: 'pre' }}
+                        ref={(el) => { this.el = el; }}
+                    />
+                    <button>Projects</button>
                 </div>
             </div>
+            
+            // <button onClick={() => this.typed.toggle()}>Toggle</button>
+            // <button onClick={() => this.typed.start()}>Start</button>
+            // <button onClick={() => this.typed.stop()}>Stop</button>
+            // <button onClick={() => this.typed.reset()}>Reset</button>
+            // <button onClick={() => this.typed.destroy()}>Destroy</button>
+   
         )
     }
 }
