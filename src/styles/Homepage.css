@@ -1,7 +1,7 @@
 .homepage {
-    background-color: #EAE7DC;
     height: 100vh;
     display: grid;
+    justify-items: center;
     align-items: center;
 }
 
@@ -12,8 +12,3 @@
     text-align: center;
 }
 
-.project-title{
-    color: rgb(97, 160, 232);
-    font-family: 'Bungee Outline', cursive;
-    font-size: px;
-}

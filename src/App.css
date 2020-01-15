@@ -1,3 +1,8 @@
 /* .App {
   text-align: center;
 } */
+
+.default-styling {
+  background-color: #EAE7DC;
+  font-family: 'PT Sans', sans-serif;
+}

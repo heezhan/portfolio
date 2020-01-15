@@ -1,12 +1,13 @@
 import React from 'react';
+import '../styles/ProjectsContainer.css'
 
 class ProjectsContainer extends React.Component {
     render() {
         return(
             <div className="homepage">
-                <div className="project-title">
+                <p className="project-title">
                     Podcastr
-                </div>
+                </p>
             </div>
         )
     }

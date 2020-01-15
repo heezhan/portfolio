@@ -1,0 +1,10 @@
+.navbar {
+    display: grid;
+    grid-template-areas: 
+        "home about-me projects resume";
+    grid-template-columns:
+        70% 10% 10% 10%;
+    align-items: center;
+    color: #E85A4F;
+    font-size: 20px;
+}
