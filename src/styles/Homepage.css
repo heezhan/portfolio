@@ -1,19 +1,19 @@
 .homepage {
-    background-color: rgb(243, 180, 166);
+    background-color: #EAE7DC;
     height: 100vh;
     display: grid;
     align-items: center;
 }
 
 .intro {
-    color: rgb(97, 160, 232);
+    color: white;
     font-family: 'PT Sans', sans-serif;
     font-size: 50px;
-    text-align: left;
+    text-align: center;
 }
 
 .project-title{
     color: rgb(97, 160, 232);
     font-family: 'Bungee Outline', cursive;
-    font-size: 100px;
+    font-size: px;
 }

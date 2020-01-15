@@ -5,16 +5,19 @@ import { Link } from 'react-router-dom';
 
 class Homepage extends React.Component {
     componentDidMount() {
-      const options = {
-          strings: ["Hi, my name is Heejae. \nI am a full stack web developer."],
-          typeSpeed: 100,
-          startDelay: 50
-      };
-      this.typed = new Typed(this.el, options);
+        const name = "Heejae".fontcolor("#E85A4F")
+        const position = "full stack web developer".fontcolor("#E85A4F")
+
+        const options = {
+            strings: [`Hi, my name is ${name}. \n I am a ${position}.`],
+            typeSpeed: 100,
+            startDelay: 50
+        };
+        this.typed = new Typed(this.el, options);
     }
   
     componentWillUnmount() {
-      this.typed.destroy();
+        this.typed.destroy();
     }
 
     render() {
