@@ -1,10 +1,27 @@
 .navbar {
     display: grid;
     grid-template-areas: 
-        "home about-me projects resume";
+        "home . . . . . . about projects resume";
     grid-template-columns:
-        70% 10% 10% 10%;
-    align-items: center;
+        10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
     color: #E85A4F;
     font-size: 20px;
+    align-items: center;
+    text-align: center;
+}
+
+.home {
+    grid-area: home;
+}
+
+.about {
+    grid-area: about;
+}
+
+.projects {
+    grid-area: projects;
+}
+
+.resume {
+    grid-area: resume;
 }

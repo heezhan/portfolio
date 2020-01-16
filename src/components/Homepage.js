@@ -9,9 +9,12 @@ class Homepage extends React.Component {
         const position = "full stack web developer".fontcolor("#E85A4F")
 
         const options = {
-            strings: [`Hi, my name is ${name}. \n I am a ${position}.`],
+            strings: [`Hi, my name is ${name}. \nI am a ${position}.`],
             typeSpeed: 100,
-            startDelay: 50
+            startDelay: 50,
+            showCursor: true,
+            cursorChar: '|',
+            autoInsertCss: true
         };
         this.typed = new Typed(this.el, options);
     }
@@ -24,13 +27,16 @@ class Homepage extends React.Component {
         return (
             <div className="homepage">
                 <div className="intro">
-                    <span
+                    <span 
                         style={{ whiteSpace: 'pre' }}
                         ref={(el) => { this.el = el; }}
                     />
-                    <br/>
+                </div>
+                <div className="projects-button">
                     <Link to="/projects">
-                        <button>Projects</button>
+                        <button>
+                            Projects
+                        </button>
                     </Link>
                 </div>
             </div>

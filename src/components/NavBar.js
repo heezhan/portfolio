@@ -6,9 +6,9 @@ class NavBar extends React.Component {
         return (
             <div className="navbar">
                 <span className="home">Home</span>
-                <span>About Me</span>
-                <span>Projects</span>
-                <span>Resume</span>
+                <span className="about">About</span>
+                <span className="projects">Projects</span>
+                <span className="resume">Resume</span>
             </div>
         )
     }
