@@ -1,5 +1,7 @@
 import React from 'react';
 import '../styles/Homepage.css';
+import linkedin from '../images/linkedin.png';
+import medium from '../images/medium.png';
 import Typed from 'typed.js';
 import { Link } from 'react-router-dom';
 
@@ -32,15 +34,18 @@ class Homepage extends React.Component {
                         ref={(el) => { this.el = el; }}
                     />
                 </div>
-                <div className="projects-button">
+                <div className="links">
                     <Link to="/projects">
                         <button>
                             Projects
                         </button>
                     </Link>
+                    <div>
+                        <img src={linkedin} />
+                        <img src={medium} />
+                    </div>
                 </div>
             </div>
-   
         )
     }
 }
