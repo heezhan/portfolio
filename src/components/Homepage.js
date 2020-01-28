@@ -31,23 +31,16 @@ class Homepage extends React.Component {
 
     render() {
         return (
-            <div className="homepage">
+            <div className={`homepage ${this.props.opacity}`}>
                 <div className="intro">
                     <span 
                         style={{ whiteSpace: 'pre' }}
                         ref={(el) => { this.el = el; }}
                     />
                 </div>
-                <div className="links">
-                    <Link to="/projects">
-                        <button>
-                            Projects
-                        </button>
-                    </Link>
-                    <div>
-                        <img src={linkedin} />
-                        <img src={medium} />
-                    </div>
+                <div className="socials">
+                    <i class="fab fa-linkedin"></i>
+                    <i class="fab fa-github-square"></i>
                 </div>
             </div>
         )

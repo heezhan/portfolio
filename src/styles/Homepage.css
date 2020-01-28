@@ -6,7 +6,7 @@
     grid-template-areas: 
         ". . ."
         ". intro ."
-        ". links .";
+        ". socials .";
     align-items: center;
     text-align: center;
 }
@@ -18,7 +18,23 @@
     font-size: 50px;
 }
 
-.links {
-    grid-area: links;
-    display: grid;
+.socials {
+    grid-area: socials;
+}
+
+.fa-linkedin {
+    font-size: 50px;
+    color: white;
+    padding: 2vw;
+}
+
+.fa-github-square {
+    font-size: 50px;
+    color: white;
+    padding: 2vw;
+
+}
+
+.opacity {
+    opacity: 0.3
 }

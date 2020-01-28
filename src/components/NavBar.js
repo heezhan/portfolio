@@ -3,23 +3,6 @@ import '../styles/NavBar.css';
 import { Link } from 'react-router-dom';
 
 class NavBar extends React.Component {
-    state = {
-        active: ""
-    }
-
-    toggleSidebar = () => {
-        console.log("hi")
-        if (this.state.active === "active") {
-            this.setState({
-                active: ""
-            })
-        } else {
-            this.setState({
-                active: "active"
-            })
-        }  
-    }
-
     render() {
         return (
             // <div className="navbar">
@@ -29,8 +12,8 @@ class NavBar extends React.Component {
             //     <span className="resume">Resume</span>
             // </div>
 
-            <div id="sidebar" className={`${this.state.active}`}>
-                <div className="toggle-btn" onClick={this.toggleSidebar}>
+            <div id="sidebar" className={`${this.props.active}`}>
+                <div className="toggle-btn" onClick={this.props.toggleSidebar}>
                     <span></span>
                     <span></span>
                     <span></span>
