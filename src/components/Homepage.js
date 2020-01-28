@@ -8,12 +8,16 @@ import { Link } from 'react-router-dom';
 class Homepage extends React.Component {
     componentDidMount() {
         const name = "Heejae".fontcolor("#d9204f")
-        const position = "full stack web developer".fontcolor("#d9204f")
+        const developer = "full stack web developer".fontcolor("#d9204f")
+        const movie = "movie enthusiast".fontcolor("#d9204f")
+        const optimist = "optimist".fontcolor("#d9204f")
 
         const options = {
-            strings: [`Hi, my name is ${name}. \nI am a ${position}.`],
+            strings: [`Hi, my name is ${name}. \nI am a ${developer}.`, `Hi, my name is ${name}. \nI am a ${movie}.`, `Hi, my name is ${name}. \nI am an ${optimist}.`],
+            smartBackspace: true,
             typeSpeed: 100,
             startDelay: 50,
+            backSpeed: 50,
             showCursor: true,
             cursorChar: '|',
             autoInsertCss: true
