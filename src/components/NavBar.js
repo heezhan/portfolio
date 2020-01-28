@@ -1,5 +1,6 @@
 import React from 'react';
-import '../styles/NavBar.css'
+import '../styles/NavBar.css';
+import { Link } from 'react-router-dom';
 
 class NavBar extends React.Component {
     state = {
@@ -37,7 +38,11 @@ class NavBar extends React.Component {
                 <ul>
                     <li>Home</li>
                     <li>About</li>
-                    <li>Projects</li>
+                    <li>
+                        <Link to={"/projects"}>
+                            Projects
+                        </Link>
+                    </li>
                     <li>Resume </li>
                 </ul>
             </div>
