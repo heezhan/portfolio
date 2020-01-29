@@ -1,20 +1,30 @@
-.projects-page {
+.about-page {
     height: 100vh;
     display: grid;
     grid-template-columns: .3fr 1fr .3fr;
     grid-template-rows: .3fr 1fr .3fr;
     grid-template-areas: 
         ". . ."
-        "page-title . ."
+        ". about ."
         ". . .";
     align-items: center;
     text-align: center;
 }
 
-.page-title{
-    font-size: 100px;
-    color: #cfef59;
+.about {
     text-align: left;
-    padding: 50px;
-    grid-area: page-title;
+    grid-area: about
+}
+
+.emphasis {
+    color: #cfef59;
+    font-size: 35px;
+}
+
+h2 {
+    color: white;
+}
+
+h3 {
+    color: #cfef59;
 }

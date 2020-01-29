@@ -4,6 +4,7 @@ import Homepage from './components/Homepage';
 import { Route } from 'react-router-dom';
 import ProjectsContainer from './containers/ProjectsContainer';
 import NavBar from './components/NavBar';
+import About from './components/About';
 
 class App extends React.Component {
   state = {
@@ -12,7 +13,6 @@ class App extends React.Component {
   }
 
   toggleSidebar = () => {
-      console.log("hi")
       if (this.state.active === "active") {
           this.setState({
               active: "",
@@ -25,16 +25,29 @@ class App extends React.Component {
           })
       }  
   }
+
+  resetToggle = () => {
+    this.setState({
+      active: "",
+      opacity: ""
+    })
+  }
+
   render() {
     return (
       <div className="default-styling">
+        <NavBar active={this.state.active} toggleSidebar={this.toggleSidebar} resetToggle={this.resetToggle}/>
+
         <Route exact path="/">
-          <NavBar active={this.state.active} toggleSidebar={this.toggleSidebar}/>
-          <Homepage opacity={this.state.opacity}/>
+          <Homepage opacity={this.state.opacity} resetToggle={this.resetToggle}/>
+        </Route>
+
+        <Route exaxct path="/about">
+          <About opacity={this.state.opacity} resetToggle={this.resetToggle}/>
         </Route>
     
         <Route exact path="/projects">
-          <ProjectsContainer />
+          <ProjectsContainer opacity={this.state.opacity} resetToggle={this.resetToggle}/>
         </Route>
       </div>
     );

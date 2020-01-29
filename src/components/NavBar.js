@@ -19,14 +19,24 @@ class NavBar extends React.Component {
                     <span></span>
                 </div>
                 <ul>
-                    <li>Home</li>
-                    <li>About</li>
-                    <li>
-                        <Link to={"/projects"}>
+                    <li onClick={this.props.resetToggle}>
+                        <Link to={"/"} className="link">
+                            Home
+                        </Link>
+                    </li>
+                    <li onClick={this.props.resetToggle}>
+                        <Link to={"/about"} className="link">
+                            About
+                        </Link>
+                    </li>
+                    <li onClick={this.props.resetToggle}>
+                        <Link to={"/projects"} className="link">
                             Projects
                         </Link>
                     </li>
-                    <li>Resume </li>
+                    <li onClick={this.props.resetToggle}>
+                        Resume
+                    </li>
                 </ul>
             </div>
         )

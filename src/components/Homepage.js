@@ -1,19 +1,18 @@
 import React from 'react';
 import '../styles/Homepage.css';
-import linkedin from '../images/linkedin.png';
-import medium from '../images/medium.png';
 import Typed from 'typed.js';
-import { Link } from 'react-router-dom';
 
 class Homepage extends React.Component {
     componentDidMount() {
-        const name = "Heejae".fontcolor("#d9204f")
-        const developer = "full stack web developer".fontcolor("#d9204f")
-        const movie = "movie enthusiast".fontcolor("#d9204f")
-        const optimist = "optimist".fontcolor("#d9204f")
+        this.props.resetToggle()
+
+        const name = "Heejae".fontcolor("#cfef59")
+        const developer = "full stack web developer".fontcolor("#cfef59")
+        const optimist = "optimist".fontcolor("#cfef59")
+        const collaborator = "collaborator".fontcolor("#cfef59")
 
         const options = {
-            strings: [`Hi, my name is ${name}. \nI am a ${developer}.`, `Hi, my name is ${name}. \nI am a ${movie}.`, `Hi, my name is ${name}. \nI am an ${optimist}.`],
+            strings: [`Hi, my name is ${name}. \nI am a ${developer}.`, `Hi, my name is ${name}. \nI am an ${optimist}.`, `Hi, my name is ${name}. \nI am a ${collaborator}.`],
             smartBackspace: true,
             typeSpeed: 100,
             startDelay: 50,
@@ -39,8 +38,12 @@ class Homepage extends React.Component {
                     />
                 </div>
                 <div className="socials">
-                    <i class="fab fa-linkedin"></i>
-                    <i class="fab fa-github-square"></i>
+                    <a href="https://www.linkedin.com/in/heejae-han/">
+                        <i class="fab fa-linkedin" />
+                    </a>
+                    <a href="https://github.com/heezhan">
+                        <i class="fab fa-github-square" />
+                    </a>
                 </div>
             </div>
         )
