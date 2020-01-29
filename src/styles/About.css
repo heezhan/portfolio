@@ -6,14 +6,18 @@
     grid-template-areas: 
         ". . ."
         ". about ."
-        ". . .";
+        ". socials .";
     align-items: center;
-    text-align: center;
 }
 
 .about {
     text-align: left;
     grid-area: about
+}
+
+.socials {
+    grid-area: socials;
+    text-align: center;
 }
 
 .emphasis {
@@ -27,4 +31,6 @@ h2 {
 
 h3 {
     color: #cfef59;
-}
+    padding-right: 25.5%;
+    padding-left: 25.5%;
+} 

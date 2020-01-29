@@ -61,7 +61,7 @@
     display: block;
     width: 30px;
     height: 5px;
-    background: #cfef59;
+    background: white;
     margin: 5px 0px;
 }
 
@@ -77,3 +77,4 @@
 .link:hover {
     color: #cfef59;
 }
+
