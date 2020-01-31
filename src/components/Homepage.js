@@ -30,7 +30,7 @@ class Homepage extends React.Component {
 
     render() {
         return (
-            <div className={`homepage ${this.props.opacity}`}>
+            <div className={`homepage ${this.props.opacity}`} onClick={this.props.resetToggle}>
                 <div className="intro">
                     <span 
                         style={{ whiteSpace: 'pre' }}
@@ -39,10 +39,10 @@ class Homepage extends React.Component {
                 </div>
                 <div className="socials">
                     <a href="https://www.linkedin.com/in/heejae-han/">
-                        <i class="fab fa-linkedin" />
+                        <i className="fab fa-linkedin home-icons" />
                     </a>
                     <a href="https://github.com/heezhan">
-                        <i class="fab fa-github-square" />
+                        <i className="fab fa-github-square home-icons" />
                     </a>
                 </div>
             </div>
