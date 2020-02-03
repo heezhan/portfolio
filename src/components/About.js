@@ -11,7 +11,7 @@ class About extends React.Component {
             <div className={`about-page ${this.props.opacity}`} onClick={this.props.resetToggle}>
                 <div className="about">
                     <h2>
-                        <span className="emphasis">Heejae Han</span> is a full stack web developer with a background in Marketing and PR. As a Media and Comm undergrad, she was always fascinated by social media and the digital space. She took an introductory computer science class as an elective, which sparked her interest in programming. Rather than being a passive user of digital platforms, she really wanted to partake in the process of cultivating the digital landscape. She is proficient in Ruby on Rails, JavaScript and React/ Redux. She excited for what the synergy between her logical and creative side can produce.
+                        <div className="emphasis">Heejae Han</div> is a full stack web developer with a background in Marketing and PR. As a Media and Comm undergrad, she was always fascinated by social media and the digital space. She took an introductory computer science class as an elective, which sparked her interest in programming. Rather than being a passive user of digital platforms, she really wanted to partake in the process of cultivating the digital landscape. She is proficient in Ruby on Rails, JavaScript and React/ Redux. She excited for what the synergy between her logical and creative side can produce.
                     </h2>
             
                     <h3>

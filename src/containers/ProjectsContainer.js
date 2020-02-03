@@ -1,5 +1,6 @@
 import React from 'react';
-import '../styles/ProjectsContainer.css'
+import { Link } from 'react-router-dom';
+import '../styles/ProjectsContainer.css';
 
 class ProjectsContainer extends React.Component {
     componentDidMount = () => {
@@ -15,21 +16,30 @@ class ProjectsContainer extends React.Component {
                 <div className="title">
                     My <br/> Projects
                 </div>
+                
                 <div className="projects">
                     <h1>
-                        Podcastr
+                        <Link to="/projects/podcastr" className="project-links">
+                            Podcastr
+                        </Link>
                     </h1>
                     <img src={require('../images/podcastr/home.png')} alt="podcastr" />
                 </div>
+                
                 <div className="projects">
                     <h1>
-                        Workout Planner 
+                        <Link to="/projects/workoutplanner" className="project-links">
+                            Workout Planner 
+                        </Link>
                     </h1>
                     <img src={require('../images/workout_planner/login.png')} alt="workout planner" />
                 </div>
+
                 <div className="projects">
                     <h1>
-                        Weather App
+                        <Link to="/projects/weatherapp" className="project-links">
+                                Weather App
+                        </Link>
                     </h1>
                     <img src={require('../images/weather_app/home.png')} alt="weather_app" />
                 </div>

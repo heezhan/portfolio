@@ -5,6 +5,9 @@ import { Route } from 'react-router-dom';
 import ProjectsContainer from './containers/ProjectsContainer';
 import NavBar from './components/NavBar';
 import About from './components/About';
+import Podcastr from './components/Podcastr';
+import WeatherApp from './components/WeatherApp';
+import WorkoutPlanner from './components/WorkoutPlanner';
 
 class App extends React.Component {
   state = {
@@ -48,6 +51,18 @@ class App extends React.Component {
     
         <Route exact path="/projects">
           <ProjectsContainer opacity={this.state.opacity} resetToggle={this.resetToggle}/>
+        </Route>
+
+        <Route exact path="/projects/podcastr">
+          <Podcastr opacity={this.state.opacity} resetToggle={this.resetToggle} />
+        </Route>
+
+        <Route exact path="/projects/workoutplanner">
+          <WorkoutPlanner opacity={this.state.opacity} resetToggle={this.resetToggle} />
+        </Route>
+
+        <Route exact path="/projects/weatherapp">
+          <WeatherApp opacity={this.state.opacity} resetToggle={this.resetToggle} />
         </Route>
       </div>
     );

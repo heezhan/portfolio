@@ -31,8 +31,13 @@
 
 } */
 
-h1 {
+.project-links {
     color: #cfef59;
+    text-decoration: none;
+}
+
+.project-links:hover {
+    color: white;
 }
 
 img {

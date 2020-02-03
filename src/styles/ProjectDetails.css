@@ -1,0 +1,35 @@
+.project-page {
+    height: 100vh;
+    background-color: #1b1b1b;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.project-title {
+    color: #cfef59;
+    margin: 0;
+}
+
+.fa-chevron-left {
+    color: white;
+    font-size: 50px;
+    padding: 30px;
+}
+
+.fa-chevron-left:hover {
+    cursor: pointer;
+    color: #cfef59;
+}
+
+.fa-chevron-right {
+    color: white;
+    font-size: 50px;
+    padding: 30px;
+}
+
+.fa-chevron-right:hover {
+    cursor: pointer;
+    color: #cfef59
+}
