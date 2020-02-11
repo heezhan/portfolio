@@ -10,14 +10,11 @@ class ProjectsContainer extends React.Component {
     render() {
         return(
             <div className={`projects-page ${this.props.opacity}`} onClick={this.props.resetToggle}>
-                {/* <p className="page-title">
-                    My Projects 
-                </p> */}
-                <div className="title">
+                {/* <div className="title">
                     My <br/> Projects
-                </div>
+                </div> */}
                 
-                <div className="projects">
+                <div className="project-card">
                     <h1>
                         <Link to="/projects/podcastr" className="project-links">
                             Podcastr
@@ -26,7 +23,7 @@ class ProjectsContainer extends React.Component {
                     <img src={require('../images/podcastr/home.png')} alt="podcastr" />
                 </div>
                 
-                <div className="projects">
+                <div className="project-card">
                     <h1>
                         <Link to="/projects/workoutplanner" className="project-links">
                             Workout Planner 
@@ -35,7 +32,7 @@ class ProjectsContainer extends React.Component {
                     <img src={require('../images/workout_planner/login.png')} alt="workout planner" />
                 </div>
 
-                <div className="projects">
+                <div className="project-card">
                     <h1>
                         <Link to="/projects/weatherapp" className="project-links">
                                 Weather App

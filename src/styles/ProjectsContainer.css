@@ -1,35 +1,26 @@
 .projects-page {
-    height: 100vh;
-    background-color: #1b1b1b;
+    background: #466af2;
     display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 50% 50%;
-    grid-template-areas:
-        ". ."
-        ". .";
-    align-items: center;
-    text-align: center;
-    padding: 30px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+    padding-top: 5%;
+    padding-bottom: 2%;
+    /* align-items: center;
+    text-align: center; */
 }
 
-/* .page-title {
-    font-size: 100px;
-    color: #cfef59;
-    text-align: left;
-    padding: 50px;
-    grid-area: page-title;
-} */
-
-.title {
+/* .title {
     font-size: 100px;
     color: #cfef59;
     text-align: left;
     padding: 80px;
-}
-
-/* .projects {
-
 } */
+
+.project-card {
+    letter-spacing: .3vh;;
+    text-align: center;
+}
 
 .project-links {
     color: #cfef59;
@@ -41,7 +32,7 @@
 }
 
 img {
-    width: 40vw;
-    height: 40vh;
+    width: 45vw;
+    height: 45vh;
 }
 

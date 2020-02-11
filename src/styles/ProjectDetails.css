@@ -1,6 +1,17 @@
-.project-page {
-    height: 100vh;
-    background-color: #1b1b1b;
+.container {
+    background: #466af2;
+    padding-top: 5%;
+    padding-bottom: 2%;
+}
+
+.details {
+    padding-left: 80px;
+    display: grid;
+}
+
+
+.project-details {
+    background: #466af2;
     display: grid;
     justify-content: center;
     align-items: center;
