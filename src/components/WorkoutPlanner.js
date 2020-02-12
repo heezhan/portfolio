@@ -50,7 +50,7 @@ class WorkoutPlanner extends React.Component {
             },
             {
                 des: "Exercise details page",
-                imgSrc: require('../images/workout_planner/exercise_detail.png')
+                imgSrc: require('../images/workout_planner/exercise_details.png')
             },
             {
                 des: "Routines page",
@@ -58,7 +58,7 @@ class WorkoutPlanner extends React.Component {
             },
             {
                 des: "Routine details page",
-                imgSrc: require('../images/workout_planner/routine_detail.png')
+                imgSrc: require('../images/workout_planner/routine_details.png')
             }
         ];
         

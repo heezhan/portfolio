@@ -1,6 +1,11 @@
-.about-page {
+.about-style {
     height: 100vh;
-    background-color: #ee7669;
+    /* background-color: #ee7669; */
+    background-color: #466af2;
+    padding-top: 5%;
+}
+
+.about-page {
     display: grid;
     grid-template-columns: .3fr 1fr .3fr;
     grid-template-rows: .3fr 1fr .3fr;
@@ -24,7 +29,7 @@
 }
 
 .emphasis {
-    color: black;
+    color: #cfef59;
     font-size: 40px;
 }
 
@@ -41,4 +46,8 @@ h3 {
 
 .about-icons:hover{
     color: black;
+}
+
+.name {
+    font-size: 50px;
 }

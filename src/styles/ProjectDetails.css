@@ -1,5 +1,4 @@
 .container {
-    height: 100vh;
     background: #466af2;
     padding-top: 5%;
     padding-bottom: 2%;
@@ -9,6 +8,7 @@
     padding-left: 80px;
     padding-right: 80px;
     display: grid;
+    align-items: center;
 }
 
 
@@ -22,7 +22,7 @@
 
 .project-title {
     color: #cfef59;
-    letter-spacing: .3vh;
+    letter-spacing: .2vh;
 }
 
 .fa-chevron-left {
