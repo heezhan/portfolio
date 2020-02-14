@@ -1,5 +1,5 @@
 .about-style {
-    height: 100vh;
+    /* height: 100vh; */
     /* background-color: #ee7669; */
     background-color: #466af2;
     padding-top: 5%;
@@ -8,19 +8,25 @@
 .about-page {
     display: grid;
     grid-template-columns: .3fr 1fr .3fr;
-    grid-template-rows: .3fr 1fr .3fr;
+    /* grid-template-rows: .3fr 1fr .3fr; */
     grid-template-areas: 
-        ". . ."
+        ". me ."
         ". about ."
         ". socials .";
-    align-items: center;
+    /* align-items: center; */
+    grid-row-gap: 20px;
+}
+
+.me {
+    grid-area: me;
+    display: grid;
 }
 
 .about {
     text-align: left;
     grid-area: about;
     display: grid;
-    grid-row-gap: 20px;
+    grid-template-columns: 50% 50%;
 }
 
 .socials {
@@ -50,4 +56,10 @@ h3 {
 
 .name {
     font-size: 50px;
+    color: #cfef59;
+}
+
+#me {
+    width: 30vw;
+    height: 75vh;
 }

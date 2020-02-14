@@ -11,12 +11,14 @@ class Homepage extends React.Component {
         const optimist = "optimist".fontcolor("#cfef59")
         const collaborator = "collaborator".fontcolor("#cfef59")
 
+        // , `Hi, my name is ${name}. \nI am an ${optimist}.`, `Hi, my name is ${name}. \nI am a ${collaborator}.
+
         const options = {
-            strings: [`Hi, my name is ${name}. \nI am a ${developer}.`, `Hi, my name is ${name}. \nI am an ${optimist}.`, `Hi, my name is ${name}. \nI am a ${collaborator}.`],
-            smartBackspace: true,
+            strings: [`Hi, my name is ${name}. \nI am a ${developer}.`],
+            // smartBackspace: true,
             typeSpeed: 100,
             startDelay: 50,
-            backSpeed: 50,
+            // backSpeed: 50,
             showCursor: true,
             cursorChar: '|',
             autoInsertCss: true
