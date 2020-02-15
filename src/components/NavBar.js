@@ -35,7 +35,9 @@ class NavBar extends React.Component {
                         </Link>
                     </li>
                     <li onClick={this.props.resetToggle}>
-                        Resume
+                        <Link to={"/resume"} className="link">
+                            Resume
+                        </Link>
                     </li>
                 </ul>
             </div>

@@ -8,6 +8,7 @@ import About from './components/About';
 import Podcastr from './components/Podcastr';
 import WeatherApp from './components/WeatherApp';
 import WorkoutPlanner from './components/WorkoutPlanner';
+import Resume from './components/Resume';
 
 class App extends React.Component {
   state = {
@@ -63,6 +64,10 @@ class App extends React.Component {
 
         <Route exact path="/projects/weatherapp">
           <WeatherApp opacity={this.state.opacity} resetToggle={this.resetToggle} />
+        </Route>
+
+        <Route exact path="/resume">
+          <Resume opacity={this.state.opacity} resetToggle={this.resetToggle} />
         </Route>
       </div>
     );
