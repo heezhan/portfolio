@@ -71,10 +71,20 @@ class WorkoutPlanner extends React.Component {
                     <CarouselSlider slideItems = {data} />
                 </div>
                 <div className="details">
-                    <h1 className="project-title">Workout Planner</h1>
-                    <h2>React | Ruby on Rails | Semantic UI</h2>
-                    <h2>A web app with how-to workout videos to help users streamline their daily exercise routines</h2>
-                    <h2>Used React Router so that the single page web app could emulate a more dynamic, multi-page interface. Incorporated methods such as Promise.all to work around the asynchronous nature of fetch calls. Constructed with JS React, Ruby on Rails, PostgreSQL DB and designed with Semantic UI and custom CSS</h2>
+                    <h1 className="project-title">
+                        Workout Planner
+                        <br/>
+                        <span id="tech">React | Ruby on Rails | Semantic UI</span>
+                    </h1>
+                    <h2 id="descrip">
+                        A web app with how-to workout videos to help users streamline their daily exercise routines
+                    </h2>
+                    <h2 id="bullet-points">
+                        Made use of state, props and controlled forms for a more seamless user experience and cleaner code <br/>
+                        Used React Router so that the single page web app could emulate a more dynamic, multi-page interface <br/>
+                        Incorporated methods such as Promise.all to work around the asynchronous nature of fetch calls <br/>
+                        Constructed with JS React, Ruby on Rails, PostgreSQL DB and designed with Semantic UI and custom CSS
+                    </h2>
                 </div>
             </div>
         )
