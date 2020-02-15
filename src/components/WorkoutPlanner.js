@@ -44,11 +44,11 @@ class WorkoutPlanner extends React.Component {
     render() {
         let data = [
             {
-                des: "Homepage/ Log In page",
+                des: "Homepage",
                 imgSrc: require('../images/workout_planner/login.png')
             },
             {
-                des: "Main page after log in",
+                des: "Main page after login",
                 imgSrc: require('../images/workout_planner/home.png')
             },
             {
