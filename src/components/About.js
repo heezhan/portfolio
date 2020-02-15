@@ -37,16 +37,26 @@ class About extends React.Component {
                     </div>
                     <div className="about">
                         <img id="me" src={require('../images/itme.jpeg')}/>
-                        <h2>
-                            <span id="subtitle">My story</span>
+                        <p className="about-details">
+                            <span id="subtitle">my story</span>
+                            <br/>
+                            <p id="my-story">I am a full stack web developer with a background in Marketing and PR.
                             <br/>
                             <br/>
-                            I am a full stack web developer with a background in Marketing and PR. As a Media and Comm undergrad, I was always fascinated by social media and the digital space. I took an introductory computer science class as an elective, which sparked my interest in programming. Rather than being a passive user of digital platforms, I really wanted to partake in the process of cultivating the digital landscape. I am proficient in Ruby on Rails, JavaScript and React/ Redux. I am excited for what the synergy between my logical and creative side can produce!
+                            As a Media and Comm undergrad, I was always fascinated by social media and the digital space. <br/> I took an introductory computer science class as an elective, which sparked my interest in programming.
                             <br/>
                             <br/>
-                            <span id="subtitle-2">technical skills...</span>
-                            <span id="skills">Ruby on Rails, JavaScript, React, Redux, MVC, RESTful Routes, APIs, SQL, PostgreSQL, RSpec, Capybara, HTML5, CSS, and Agile Methodologies</span>
-                        </h2>
+                            Rather than being a passive user of digital platforms, I really wanted to partake in the process of cultivating the digital landscape.
+                            <br/>
+                            <br/>
+                            I am proficient in Ruby on Rails, JavaScript and React/ Redux. I am excited for what the synergy between my logical and creative side can produce!</p>
+                            <br/>
+                  
+                            <span id="subtitle-2">technical skills</span>
+                            <br/>
+                            <br/>
+                            <span id="skills">Ruby on Rails, JavaScript, React, Redux, MVC, RESTful Routes, APIs, SQL, PostgreSQL, RSpec, Capybara, HTML5, CSS, and Agile</span>
+                        </p>
                     </div>
                     <div className="socials">
                         <a href="https://www.linkedin.com/in/heejae-han/">

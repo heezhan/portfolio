@@ -39,11 +39,10 @@
     font-size: 40px;
 }
 
-h2 {
+.about-details {
     color: white;
     margin: 0;
     padding-left: 10%;
-    text-align: center;
 }
 
 h3 {
@@ -70,7 +69,7 @@ h3 {
 #subtitle {
     color: #cfef59;
     letter-spacing: .3vh;
-    font-size: 30px;
+    font-size: 25px;
 }
 
 #subtitle-2 {
@@ -80,5 +79,10 @@ h3 {
 }
 
 #skills {
+    font-size: 20px;
+    letter-spacing: .1vh;
+}
+
+#my-story {
     font-size: 20px;
 }

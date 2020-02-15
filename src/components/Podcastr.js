@@ -3,6 +3,10 @@ import '../styles/ProjectDetails.css';
 import CarouselSlider from 'react-carousel-slider';
 
 class Podcastr extends React.Component {
+    componentDidMount = () => {
+        this.props.resetToggle()
+    }
+    
     render() {
         let data = [
             {
@@ -48,15 +52,17 @@ class Podcastr extends React.Component {
         ];
         
         return (
-            <div className="container">
+            <div className={`container ${this.props.opacity}`} onClick={this.props.resetToggle}>
                 <div className="carousel">
-                    <CarouselSlider slideItems = {data} />
+                    <CarouselSlider slideItems={data} />
                 </div>
                 <div className="details">
-                    <h1 className="project-title">Podcastr</h1>
-                    <h2>Redux | Ruby on Rails | Semantic UI</h2>
-                    <h2>A podcast web app where users can browse and listen to podcasts as well as curate their own playlists</h2>
-                    <h2>Integrated Listen Notes API in the back-end to render podcasts and their episodes based on user query. Imported a package called React HTML Parser to convert standard HTML elements into their React counterparts. Utilized key frames to have a moving gradient as a background. Built with JS Redux, Ruby on Rails, PostgreSQL DB and styled with Semantic UI React and custom CSS</h2>
+                    <h1 className="project-title">Podcastr
+                    <br/>
+                    <span id="tech">Redux | Ruby on Rails | Semantic UI</span>
+                    </h1>
+                    <h2 id="descrip">A podcast web app where users can browse and listen to podcasts as well as curate their own playlists</h2>
+                    <h2 id="bullet-points">Integrated Listen Notes API in the back-end to render podcasts and their episodes based on user query <br/> Imported a package called React HTML Parser to convert standard HTML elements into their React counterparts <br/> Utilized key frames to have a moving gradient as a background <br/> Built with JS Redux, Ruby on Rails, PostgreSQL DB and styled with Semantic UI React and custom CSS</h2>
                 </div>
             </div>
         )

@@ -37,6 +37,9 @@ class WorkoutPlanner extends React.Component {
     //         })
     //     }
     // }
+    componentDidMount = () => {
+        this.props.resetToggle()
+    }
 
     render() {
         let data = [
@@ -63,7 +66,7 @@ class WorkoutPlanner extends React.Component {
         ];
         
         return (
-            <div className="container">
+            <div className={`container ${this.props.opacity}`} onClick={this.props.resetToggle}>
                 <div className="carousel">
                     <CarouselSlider slideItems = {data} />
                 </div>

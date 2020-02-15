@@ -5,6 +5,7 @@
 }
 
 .details {
+    padding-top: 20px;
     padding-left: 80px;
     padding-right: 80px;
     display: grid;
@@ -45,4 +46,19 @@
 .fa-chevron-right:hover {
     cursor: pointer;
     color: #cfef59
+}
+
+#tech {
+    color: white;
+    font-size: 25px;
+}
+
+#descrip {
+    font-size: 25px;
+    color: white;
+}
+
+#bullet-points {
+    font-size: 20px;
+    color: white;
 }
