@@ -1,0 +1,40 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.00989041.chunk.css",
+    "main.js": "/portfolio/static/js/main.409a70c3.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.409a70c3.chunk.js.map",
+    "runtime-main.js": "/portfolio/static/js/runtime-main.fed7eca6.js",
+    "runtime-main.js.map": "/portfolio/static/js/runtime-main.fed7eca6.js.map",
+    "static/css/2.5361492b.chunk.css": "/portfolio/static/css/2.5361492b.chunk.css",
+    "static/js/2.6b5362b2.chunk.js": "/portfolio/static/js/2.6b5362b2.chunk.js",
+    "static/js/2.6b5362b2.chunk.js.map": "/portfolio/static/js/2.6b5362b2.chunk.js.map",
+    "index.html": "/portfolio/index.html",
+    "precache-manifest.c006eb81943ed7db65ade87f764b20d0.js": "/portfolio/precache-manifest.c006eb81943ed7db65ade87f764b20d0.js",
+    "service-worker.js": "/portfolio/service-worker.js",
+    "static/css/2.5361492b.chunk.css.map": "/portfolio/static/css/2.5361492b.chunk.css.map",
+    "static/css/main.00989041.chunk.css.map": "/portfolio/static/css/main.00989041.chunk.css.map",
+    "static/js/2.6b5362b2.chunk.js.LICENSE": "/portfolio/static/js/2.6b5362b2.chunk.js.LICENSE",
+    "static/media/episode_details.png": "/portfolio/static/media/episode_details.ae6562b0.png",
+    "static/media/episode_playlists.png": "/portfolio/static/media/episode_playlists.cbfdf7ba.png",
+    "static/media/episodes.png": "/portfolio/static/media/episodes.b65a4728.png",
+    "static/media/exercise_details.png": "/portfolio/static/media/exercise_details.d632217d.png",
+    "static/media/favorite.png": "/portfolio/static/media/favorite.e5147dc6.png",
+    "static/media/home.png": "/portfolio/static/media/home.954935e0.png",
+    "static/media/itme.jpeg": "/portfolio/static/media/itme.6868c3ba.jpeg",
+    "static/media/login.png": "/portfolio/static/media/login.aeaa456d.png",
+    "static/media/playlist_delete.png": "/portfolio/static/media/playlist_delete.a88a87ff.png",
+    "static/media/playlist_edit.png": "/portfolio/static/media/playlist_edit.c3e62b70.png",
+    "static/media/playlists.png": "/portfolio/static/media/playlists.bb99bed3.png",
+    "static/media/podcast_details.png": "/portfolio/static/media/podcast_details.06f00537.png",
+    "static/media/podcasts.png": "/portfolio/static/media/podcasts.4e49434f.png",
+    "static/media/routine_details.png": "/portfolio/static/media/routine_details.6409f5a4.png",
+    "static/media/routines.png": "/portfolio/static/media/routines.9ca069e1.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.fed7eca6.js",
+    "static/css/2.5361492b.chunk.css",
+    "static/js/2.6b5362b2.chunk.js",
+    "static/css/main.00989041.chunk.css",
+    "static/js/main.409a70c3.chunk.js"
+  ]
+}
