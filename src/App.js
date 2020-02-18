@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import Homepage from './components/Homepage';
-import { Route } from 'react-router-dom';
+import { HashRouter, Route } from 'react-router-dom';
 import ProjectsContainer from './containers/ProjectsContainer';
 import NavBar from './components/NavBar';
 import About from './components/About';
@@ -39,6 +39,7 @@ class App extends React.Component {
 
   render() {
     return (
+      <HashRouter basename="/">
       <div className="default-styling">
         <NavBar active={this.state.active} toggleSidebar={this.toggleSidebar} resetToggle={this.resetToggle}/>
 
@@ -70,6 +71,7 @@ class App extends React.Component {
           <Resume opacity={this.state.opacity} resetToggle={this.resetToggle} />
         </Route>
       </div>
+      </HashRouter>
     );
   }
 }
