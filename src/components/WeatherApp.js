@@ -22,11 +22,39 @@ class WeatherApp extends React.Component {
                 imgSrc: require('../images/weather_app/favorite.png')
             }
         ];
+
+        let sliderBoxStyle = {
+            background: "transparent",
+            // height: "400px",
+            width: "700px"
+        };
+
+        let buttonSetting = {
+            placeOn: "middle-inside",
+            style: {
+              left: {
+                color: "white",
+                background: "transparent",
+                border: "2px solid #e1e4e8",
+                borderRadius: "50%"
+              },
+              right: {
+                color: "white",
+                background: "transparent",
+                border: "2px solid #e1e4e8",
+                borderRadius: "50%"
+              }
+            }
+        };
         
         return (
             <div className={`container ${this.props.opacity}`} onClick={this.props.resetToggle}>
                 <div className="carousel">
-                    <CarouselSlider slideItems = {data} />
+                    <CarouselSlider 
+                        slideItems={data} 
+                        sliderBoxStyle={sliderBoxStyle}
+                        buttonSetting={buttonSetting}
+                    />
                 </div>
                 <div className="details">
                     <h1 className="project-title">

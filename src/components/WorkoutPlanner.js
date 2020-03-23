@@ -64,11 +64,51 @@ class WorkoutPlanner extends React.Component {
                 imgSrc: require('../images/workout_planner/routine_details.png')
             }
         ];
+
+        let sliderBoxStyle = {
+            background: "transparent",
+            height: "480px",
+            width: "700px"
+        };
+
+        let textBoxStyle = {
+            top: "110%",
+            width: "60%"
+        };
+
+        let buttonSetting = {
+            placeOn: "middle-inside",
+            style: {
+              left: {
+                color: "white",
+                background: "transparent",
+                border: "2px solid #e1e4e8",
+                borderRadius: "50%"
+              },
+              right: {
+                color: "white",
+                background: "transparent",
+                border: "2px solid #e1e4e8",
+                borderRadius: "50%"
+              }
+            }
+        };
+
+        let customSlideCpnts = data.map((item, index) => (
+            <div>
+                <img src={item.imgSrc} />
+                <p style={textBoxStyle}>{item.des}</p>
+            </div>
+        ));
         
         return (
             <div className={`container ${this.props.opacity}`} onClick={this.props.resetToggle}>
                 <div className="carousel">
-                    <CarouselSlider slideItems = {data} />
+                    <CarouselSlider 
+                        slideCpnts={customSlideCpnts} 
+                        sliderBoxStyle={sliderBoxStyle}
+                        buttonSetting={buttonSetting}
+                    />
                 </div>
                 <div className="details">
                     <h1 className="project-title">

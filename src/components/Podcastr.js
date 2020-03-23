@@ -58,18 +58,18 @@ class Podcastr extends React.Component {
         };
 
         let buttonSetting = {
-            placeOn: "middle-outside",
+            placeOn: "middle-inside",
             style: {
               left: {
-                color: "#929393",
+                color: "white",
                 background: "transparent",
-                border: "1px solid #e1e4e8",
+                border: "2px solid #e1e4e8",
                 borderRadius: "50%"
               },
               right: {
-                color: "#929393",
+                color: "white",
                 background: "transparent",
-                border: "1px solid #e1e4e8",
+                border: "2px solid #e1e4e8",
                 borderRadius: "50%"
               }
             }
