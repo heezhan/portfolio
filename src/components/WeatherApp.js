@@ -10,7 +10,7 @@ class WeatherApp extends React.Component {
     render() {
         let data = [
             {
-                des: "The main page displays the current weather in your area via geolocation",
+                des: "The main page displays the current weather in your area if you allow geolocation sharing",
                 imgSrc: require('../images/weather_app/home.png')
             },
             {
@@ -30,12 +30,12 @@ class WeatherApp extends React.Component {
         let sliderBoxStyle = {
             background: "transparent",
             height: "480px",
-            width: "700px"
+            width: "800px"
         };
 
         let textBoxStyle = {
             top: "110%",
-            width: "60%"
+            width: "95%"
         };
 
         let buttonSetting = {
