@@ -53,8 +53,13 @@ class Podcastr extends React.Component {
 
         let sliderBoxStyle = {
             background: "transparent",
-            // height: "400px",
+            height: "480px",
             width: "700px"
+        };
+
+        let textBoxStyle = {
+            top: "110%",
+            width: "60%"
         };
 
         let buttonSetting = {
@@ -75,11 +80,18 @@ class Podcastr extends React.Component {
             }
         };
 
+        let customSlideCpnts = data.map((item, index) => (
+            <div>
+                <img src={item.imgSrc} />
+                <p style={textBoxStyle}>{item.des}</p>
+            </div>
+        ));
+
         return (
             <div className={`container ${this.props.opacity}`} onClick={this.props.resetToggle}>
                 <div className="carousel">
                     <CarouselSlider 
-                        slideItems={data} 
+                        slideCpnts={customSlideCpnts} 
                         sliderBoxStyle={sliderBoxStyle}
                         buttonSetting={buttonSetting}
                     />
