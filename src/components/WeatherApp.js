@@ -34,8 +34,9 @@ class WeatherApp extends React.Component {
         };
 
         let textBoxStyle = {
-            top: "110%",
-            width: "95%"
+            top: "105%",
+            width: "95%",
+            background: "transparent"
         };
 
         let buttonSetting = {
