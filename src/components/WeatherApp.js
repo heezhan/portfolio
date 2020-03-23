@@ -10,16 +10,20 @@ class WeatherApp extends React.Component {
     render() {
         let data = [
             {
-                des: "Homepage",
+                des: "The main page displays the current weather in your area via geolocation",
                 imgSrc: require('../images/weather_app/home.png')
             },
             {
-                des: "Logged in page",
-                imgSrc: require('../images/weather_app/login.png')
+                des: "After logging in, the cities you have favorited show up on the right hand side",
+                imgSrc: require('../images/weather_app/loggedin.png')
             },
             {
-                des: "Favorite a city",
-                imgSrc: require('../images/weather_app/favorite.png')
+                des: "Cities that you have favorited have the heart symbol toggled on",
+                imgSrc: require('../images/weather_app/favorites.png')
+            },
+            {
+                des: "You can easily search for big cities using the search engine",
+                imgSrc: require('../images/weather_app/search.png')
             }
         ];
 
