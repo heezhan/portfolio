@@ -50,11 +50,39 @@ class Podcastr extends React.Component {
                 imgSrc: require('../images/podcastr/playlist_delete.png')
             }
         ];
-        
+
+        let sliderBoxStyle = {
+            background: "transparent",
+            // height: "400px",
+            width: "700px"
+        };
+
+        let buttonSetting = {
+            placeOn: "middle-outside",
+            style: {
+              left: {
+                color: "#929393",
+                background: "transparent",
+                border: "1px solid #e1e4e8",
+                borderRadius: "50%"
+              },
+              right: {
+                color: "#929393",
+                background: "transparent",
+                border: "1px solid #e1e4e8",
+                borderRadius: "50%"
+              }
+            }
+        };
+
         return (
             <div className={`container ${this.props.opacity}`} onClick={this.props.resetToggle}>
                 <div className="carousel">
-                    <CarouselSlider slideItems={data} />
+                    <CarouselSlider 
+                        slideItems={data} 
+                        sliderBoxStyle={sliderBoxStyle}
+                        buttonSetting={buttonSetting}
+                    />
                 </div>
                 <div className="details">
                     <h1 className="project-title">
