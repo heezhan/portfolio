@@ -29,7 +29,7 @@ class ProjectsContainer extends React.Component {
                             Workout Planner 
                         </Link>
                     </h1>
-                    <img src={require('../images/workout_planner/login.png')} alt="workout planner" />
+                    <img src={require('../images/workout_planner/home.png')} alt="workout planner" />
                 </div>
 
                 <div className="project-card">

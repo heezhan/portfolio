@@ -48,7 +48,7 @@ class WorkoutPlanner extends React.Component {
                 imgSrc: require('../images/workout_planner/home.png')
             },
             {
-                des: "After logging in, you will be directed to your page with all your routines",
+                des: "After logging in, you will be directed to a page with all your routines",
                 imgSrc: require('../images/workout_planner/loggedin.png')
             },
             {
@@ -68,7 +68,7 @@ class WorkoutPlanner extends React.Component {
         let sliderBoxStyle = {
             background: "transparent",
             height: "480px",
-            width: "700px"
+            width: "800px"
         };
 
         let textBoxStyle = {

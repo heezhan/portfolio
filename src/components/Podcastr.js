@@ -14,7 +14,7 @@ class Podcastr extends React.Component {
                 imgSrc: require('../images/podcastr/home.png')
             },
             {
-                des: "Login page",
+                des: "Log in or create an account",
                 imgSrc: require('../images/podcastr/login.png')
             },
             {
@@ -22,31 +22,31 @@ class Podcastr extends React.Component {
                 imgSrc: require('../images/podcastr/podcasts.png')
             },
             {
-                des: "Podcast details page",
+                des: "When you click on a podcast, all the episodes and their descriptions will be shown",
                 imgSrc: require('../images/podcastr/podcast_details.png')
             },
             {
-                des: "Search by episode",
+                des: "Instead of searching by podcast, you have the option to search for episodes",
                 imgSrc: require('../images/podcastr/episodes.png')
             },
             {
-                des: "Episode details page",
+                des: "When you click on an episode, you can play the episode as well as add it to your playlist",
                 imgSrc: require('../images/podcastr/episode_details.png')
             },
             {
-                des: "Add to or remove from playlists",
+                des: "You can add to or remove from any of your existing playlists or just create a new playlist on the spot",
                 imgSrc: require('../images/podcastr/episode_playlists.png')
             },
             {
-                des: "Playlists page",
+                des: 'You can see a list of all your playlists by clicking on "My Playlists" in the navigation bar',
                 imgSrc: require('../images/podcastr/playlists.png')
             },
             {
-                des: "Edit playlist",
+                des: "You can edit the name of a playlist",
                 imgSrc: require('../images/podcastr/playlist_edit.png')
             },
             {
-                des: "Delete playlist",
+                des: "You can delete a playlist",
                 imgSrc: require('../images/podcastr/playlist_delete.png')
             }
         ];
@@ -54,12 +54,13 @@ class Podcastr extends React.Component {
         let sliderBoxStyle = {
             background: "transparent",
             height: "480px",
-            width: "700px"
+            width: "800px"
         };
 
         let textBoxStyle = {
-            top: "110%",
-            width: "60%"
+            top: "105%",
+            width: "95%",
+            background: "transparent"
         };
 
         let buttonSetting = {
