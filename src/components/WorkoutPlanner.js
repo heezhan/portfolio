@@ -44,24 +44,24 @@ class WorkoutPlanner extends React.Component {
     render() {
         let data = [
             {
-                des: "Homepage",
-                imgSrc: require('../images/workout_planner/login.png')
-            },
-            {
-                des: "Main page after login",
+                des: "The main page prompts you to log in or create an account",
                 imgSrc: require('../images/workout_planner/home.png')
             },
             {
-                des: "Exercise details page",
+                des: "After logging in, you will be directed to your page with all your routines",
+                imgSrc: require('../images/workout_planner/loggedin.png')
+            },
+            {
+                des: "When you click on a specific routine, you will be able to see all the videos you've added to that routine",
+                imgSrc: require('../images/workout_planner/routine.png')
+            },
+            {
+                des: 'By clicking on "Show Details", you will be able to see more information about the exercise as well a bigger video',
                 imgSrc: require('../images/workout_planner/exercise_details.png')
             },
             {
-                des: "Routines page",
-                imgSrc: require('../images/workout_planner/routines.png')
-            },
-            {
-                des: "Routine details page",
-                imgSrc: require('../images/workout_planner/routine_details.png')
+                des: "Your home page will feature all the exercise videos that are available for you to incorporate into your routine",
+                imgSrc: require('../images/workout_planner/exercises.png')
             }
         ];
 
@@ -72,8 +72,9 @@ class WorkoutPlanner extends React.Component {
         };
 
         let textBoxStyle = {
-            top: "110%",
-            width: "60%"
+            top: "105%",
+            width: "95%",
+            background: "transparent"
         };
 
         let buttonSetting = {
