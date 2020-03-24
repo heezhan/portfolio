@@ -20,7 +20,7 @@ class ProjectsContainer extends React.Component {
                             Podcastr
                         </Link>
                     </h1>
-                    <img src={require('../images/podcastr/home.png')} alt="podcastr" />
+                    <img className="project-display" src={require('../images/podcastr/home.png')} alt="podcastr" />
                 </div>
                 
                 <div className="project-card">
@@ -29,7 +29,7 @@ class ProjectsContainer extends React.Component {
                             Workout Planner 
                         </Link>
                     </h1>
-                    <img src={require('../images/workout_planner/home.png')} alt="workout planner" />
+                    <img className="project-display" src={require('../images/workout_planner/home.png')} alt="workout planner" />
                 </div>
 
                 <div className="project-card">
@@ -38,7 +38,7 @@ class ProjectsContainer extends React.Component {
                                 Weather App
                         </Link>
                     </h1>
-                    <img src={require('../images/weather_app/home.png')} alt="weather_app" />
+                    <img className="project-display" src={require('../images/weather_app/home.png')} alt="weather_app" />
                 </div>
             </div>
         )

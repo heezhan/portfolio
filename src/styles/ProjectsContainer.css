@@ -36,3 +36,8 @@ img {
     height: 45vh;
 }
 
+.project-display {
+    border-style: solid;
+    border-width: 3px;
+    border-color: white;
+}
