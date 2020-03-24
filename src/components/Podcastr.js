@@ -22,7 +22,7 @@ class Podcastr extends React.Component {
                 imgSrc: require('../images/podcastr/podcasts.png')
             },
             {
-                des: "When you click on a podcast, all the episodes and their descriptions will be shown",
+                des: "When you click on a podcast, all its episodes and their descriptions will be shown",
                 imgSrc: require('../images/podcastr/podcast_details.png')
             },
             {
@@ -40,6 +40,10 @@ class Podcastr extends React.Component {
             {
                 des: 'You can see a list of all your playlists by clicking on "My Playlists" in the navigation bar',
                 imgSrc: require('../images/podcastr/playlists.png')
+            },
+            {
+                des: "You can see all the episodes you've added to a specific playlist",
+                imgSrc: require('../images/podcastr/playlist_episodes.png')
             },
             {
                 des: "You can edit the name of a playlist",
